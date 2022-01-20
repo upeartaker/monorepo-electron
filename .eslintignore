@@ -1,0 +1,7 @@
+public
+dist
+*.d.ts
+.husky/*
+docs
+
+packages/**/docs/**
