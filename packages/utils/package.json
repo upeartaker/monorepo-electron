@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "liutienan@jjl.cn",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.178",
+    "lodash": "^4.17.21"
+  }
 }

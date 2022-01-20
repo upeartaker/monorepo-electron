@@ -11,18 +11,29 @@
     "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
     "lint:pretty": "pretty-quick --staged",
     "commit": "git add . && git-cz",
-    "push": "lerna version --conventional-commits"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "clean": "rm -rf node_modules **/*/node_modules",
+    "dev:web": "pnpm -C ./packages/web dev"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^16.0.3",
     "@commitlint/config-conventional": "^16.0.0",
+    "@microsoft/api-extractor": "^7.19.4",
     "@types/google-protobuf": "^3.15.5",
     "@types/node": "^17.0.10",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
     "babel-plugin-transform-remove-console": "^6.9.4",
+    "chalk": "^5.0.0",
     "commitizen": "^4.2.4",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.7.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",

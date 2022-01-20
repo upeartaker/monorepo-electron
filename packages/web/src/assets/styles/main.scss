@@ -1,0 +1,17 @@
+// @import './reset.css';
+html,
+body,
+main {
+  height: 100%;
+}
+
+.toast {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
