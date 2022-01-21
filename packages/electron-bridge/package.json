@@ -1,0 +1,19 @@
+{
+  "name": "@keen/bridge",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=v16.10",
+    "npm": ">=8.1"
+  },
+  "main": "dist/index.cjs",
+  "scripts": {
+    "build:preload": "vite build",
+    "build:preload:types": "dts-cb -i src/**/*.ts -o packages/preload/exposedInMainWorld.d.ts",
+    "test:preload": "vitest run -r ./ --passWithNoTests",
+    "typecheck:preload": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "electron": "16.0.6"
+  }
+}

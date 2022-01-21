@@ -91,4 +91,5 @@ sw.*
 # Vim swap files
 *.swp
 
-
+# pnpm
+.pnpm-debug.log
