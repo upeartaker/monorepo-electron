@@ -13,7 +13,9 @@
     "commit": "git add . && git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "clean": "rm -rf node_modules **/*/node_modules",
-    "dev:web": "pnpm -C ./packages/web dev"
+    "dev:web": "pnpm -C ./packages/web dev",
+    "dev:desktop": "pnpm -C ./packages/desktop watch",
+    "pack:desktop": "pnpm -C ./packages/web build:desktop && pnpm -C ./packages/electron-bridge build && pnpm -C ./packages/desktop compile"
   },
   "config": {
     "commitizen": {
@@ -36,6 +38,9 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.7.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-util": "^3.0.8",
     "husky": "^7.0.4",
     "lint-staged": "^12.2.1",
     "prettier": "^2.5.1",

@@ -1,4 +1,4 @@
-import { App } from '@vue/runtime-core'
+import { App } from 'vue'
 import { Button, Card, Col, Row, Input, Divider } from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
 

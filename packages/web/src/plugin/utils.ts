@@ -1,4 +1,4 @@
-import { App } from '@vue/runtime-core'
+import { App } from 'vue'
 
 export interface UtilsShape {
   calNum: (val?: string | number) => string
