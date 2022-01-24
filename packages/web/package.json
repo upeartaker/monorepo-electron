@@ -21,7 +21,9 @@
     "ant-design-vue": "^2.2.8",
     "axios": "^0.24.0",
     "nprogress": "^0.2.0",
-    "vue": "^3.2.16"
+    "vue": "^3.2.16",
+    "vue-router": "4",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@types/nprogress": "^0.2.0",

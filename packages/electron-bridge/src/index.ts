@@ -34,3 +34,9 @@ contextBridge.exposeInMainWorld('versions', process.versions)
  * window.nodeCrypto('data')
  */
 contextBridge.exposeInMainWorld('nodeCrypto', { sha256sum })
+
+/**
+ *  Safe expose node.js API
+ *  window.desktop
+ */
+contextBridge.exposeInMainWorld('desktop', true)
